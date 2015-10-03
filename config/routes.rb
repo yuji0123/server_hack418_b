@@ -1,11 +1,9 @@
 Rails.application.routes.draw do
-
-namespace :api, { format: 'json' } do
-    post 'pickelpost' => 'nows#reset'
-  end
+  root :to => 'users#index'
+  post 'pickelpost' => 'nows#reset'
 
 
-      resources :users
+  resources :users
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
