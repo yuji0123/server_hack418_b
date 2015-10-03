@@ -11,12 +11,29 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151003105158) do
+ActiveRecord::Schema.define(version: 20151003120719) do
+
+  create_table "matches", force: :cascade do |t|
+    t.integer  "user_id"
+    t.integer  "user_id_2"
+    t.text     "position"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "nows", force: :cascade do |t|
+    t.integer  "user_id"
+    t.text     "now_positon"
+    t.integer  "point"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "name"
     t.text     "email"
     t.text     "profile"
+    t.text     "image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
