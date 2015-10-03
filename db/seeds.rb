@@ -16,3 +16,12 @@ User.create(:name => 'kettsun', :email => 'kettsun@tanei.com', :profile => '兵�
 User.create(:name => 'moricchi', :email => 'moricchi@tanei.com', :profile => '大阪府堺市', :image => 'https://hack418b.herokuapp.com/public/img/moricchi.png')
 
 User.create(:name => 'ryu-shi', :email => 'ryu-shi@tanei.com', :profile => '兵庫県神戸市', :image => 'https://hack418b.herokuapp.com/public/img/ryu-shi.png')
+
+
+Now.create(:user_id => '1', :now_position_x => '35.12345', :now_position_y => '135.53141', :point => '120')
+
+Now.create(:user_id => '1', :now_position_x => '35.1234', :now_position_y => '135.76565', :point => '55')
+
+Now.create(:user_id => '1', :now_position_x => '35.12354', :now_position_y => '135.76544', :point => '99')
+
+Now.create(:user_id => '1', :now_position_x => '35.12365', :now_position_y => '135.76123', :point => '100')

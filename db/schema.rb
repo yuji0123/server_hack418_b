@@ -23,10 +23,11 @@ ActiveRecord::Schema.define(version: 20151003120719) do
 
   create_table "nows", force: :cascade do |t|
     t.integer  "user_id"
-    t.text     "now_positon"
+    t.float    "now_position_x"
+    t.float    "now_position_y"
     t.integer  "point"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
   end
 
   create_table "users", force: :cascade do |t|
