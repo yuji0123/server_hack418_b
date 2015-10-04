@@ -28,7 +28,7 @@
 
 1.upto(100) do |abc|
 
-  User.create(:name => 'taneisan', :email => 'taneisan@tanei.com', :profile => '東京都長野区', :image => 'https://hack418b.herokuapp.com/public/img/taneisan.png')
+  User.create(:name => 'taneisan', :email => 'taneisan@tanei.com', :profile => '東京都長野区', :image => 'https://hack418b.herokuapp.com/app/assets/images/dummy_icon.png')
   Now.create(:user_id => abc, :now_position_x => abc, :now_position_y => abc, :point => abc+rand(100))
 end
 
