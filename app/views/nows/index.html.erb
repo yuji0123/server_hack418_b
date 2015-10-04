@@ -8,13 +8,14 @@
 
 <p>POSTサンプル</p>
 
-<form method="post" action="/pickelpost">
- <p>
- 旅行先：<input type="text" name="dest" /><br />
- 人数：<input type="text" name="num" />人<br />
- <input type="submit" value="送信" />
- </p>
-</form>
+<%= form_for(@nows, url: {action: 'reset', method: :post}, html:{class: 'inquiry'} ) do |f| %>
+
+                <%= f.text_field :user_id, class: 'required-item', id: 'team-name', placeholder: 'id'%><br>
+                <%= f.text_field :now_position_x, class: 'mail required-item', id: 'team-mail-address'%><br>
+                <%= f.text_field :now_position_y, class: 'mail required-item', id: 'team-mail-address'%><br>
+                <%= f.submit class: 'submitbutton', value: '「POSTする', data: { disable_with: '問い合わせ中...' } %>
+              <% end %>
+
 
 </body>
 </html>

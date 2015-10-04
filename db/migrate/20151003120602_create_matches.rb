@@ -3,7 +3,8 @@ class CreateMatches < ActiveRecord::Migration
     create_table :matches do |t|
       t.integer :user_id
       t.integer :user_id_2
-      t.text :position
+      t.float :position_x
+      t.float :position_y
 
       t.timestamps null: false
     end
