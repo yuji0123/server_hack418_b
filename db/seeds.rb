@@ -29,8 +29,14 @@
 1.upto(100) do |abc|
 
   User.create(:name => 'taneisan', :email => 'taneisan@tanei.com', :profile => '東京都長野区', :image => 'https://hack418b.herokuapp.com/app/assets/images/dummy_icon.png')
-  Now.create(:user_id => abc, :now_position_x => abc, :now_position_y => abc, :point => abc+rand(100))
+  Now.create(:user_id => abc, :now_position_x => 37+(0.01*rand(10)), :now_position_y => 125+(0.01*rand(10)), :point => abc+rand(100))
 end
+
+Match.create(:user_id => 1, :user_id_2 => 5, :position_x => 37.001, :position_y => 125.01)
+Match.create(:user_id => 2, :user_id_2 => 3, :position_x => 37.001, :position_y => 125.01)
+Match.create(:user_id => 4, :user_id_2 => 8, :position_x => 37.001, :position_y => 125.01)
+Match.create(:user_id => 1, :user_id_2 => 9, :position_x => 37.001, :position_y => 125.01)
+
 
 
 

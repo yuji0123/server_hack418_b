@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+<title>POSTサンプル</title>
+</head>
+<body>
+
+
+<h1>Listing matches</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Profile</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @matches.each do |match| %>
+      <tr>
+        <td><%= match.user_id %></td>
+        <td><%= match.user_id_2 %></td>
+        <td><%= match.position_x %></td>
+        <td><%= match.position_y %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+</body>
+</html>

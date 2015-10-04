@@ -2,7 +2,7 @@ class MatchesController < ApplicationController
   	before_action :set_match, only: [:getpost]
 
   	def index
-  		@nows = Now.new
+  		@matches = Match.all
   		render 'index'
 	end
 # 一緒にいる事をポストするメソッド
@@ -29,7 +29,7 @@ class MatchesController < ApplicationController
     end
 
     private
-    def search_nearest
+    def remove_yet
 
     end
   end

@@ -16,7 +16,8 @@ ActiveRecord::Schema.define(version: 20151003120719) do
   create_table "matches", force: :cascade do |t|
     t.integer  "user_id"
     t.integer  "user_id_2"
-    t.text     "position"
+    t.float    "position_x"
+    t.float    "position_y"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
